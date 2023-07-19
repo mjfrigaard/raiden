@@ -1,0 +1,68 @@
+---
+title: "How it works"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How it works}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+knitr::opts_knit$set(
+  root.dir = ".."
+)
+```
+
+```{r pkgs}
+library(raiden)
+library(rstudioapi)
+library(rlang)
+library(R6)
+```
+
+## Outline
+
+This vignette documents how the `raiden` Addin locates your R objects, determines their structure, and provides the UI interface for editing the `roxygen2` tags.
+
+## `is.package`?
+
+Is the current directory an R package? 
+
+```{r}
+getwd()
+is_package()
+```
+
+## Load objects 
+
+Let's load some objects in the global environment:
+
+```{r}
+my_list <- list('mtcars' = datasets::mtcars,
+                'attitude' = datasets::attitude,
+               'titanic' = datasets::Titanic)
+mtcars <- datasets::mtcars
+my_time <- Sys.time()
+R6_class_generator <- R6Class()
+R6_object <- R6_class_generator$new()
+```
+
+
+The `gather_objects()` function will find all objects in the global environment. 
+
+```{r}
+gather_objects(type = "all")
+```
+
+The `gather_classes()` will identify all objects in the global environment, but also return their class: 
+
+```{r}
+gather_classes()
+```
+
+In the case that an object has multiple classes, the `gather_classes()` collapses these into a single character (separated by a comma (`,`)):
+
