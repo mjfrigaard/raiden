@@ -36,7 +36,7 @@ The `raiden` package contains an RStudio Addin for documenting R objects--primar
 
 `raiden` is designed to be called when a user has an object in the global environment they'd like to document with `roxygen2` tags.
 
-### Example 
+### Example
 
 Creating objects to document:
 
