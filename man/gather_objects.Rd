@@ -14,11 +14,11 @@ Gather objects in global environment
 }
 \examples{
 require(R6)
-my_list <- list('mtcars' = datasets::mtcars,
-                'attitude' = datasets::attitude,
-                'titanic' = datasets::Titanic)
-mtcars <- datasets::mtcars
-class_generator <- R6Class()
-object <- class_generator$new()
-gather_objects(type = "all")
+# my_list <- list('mtcars' = datasets::mtcars,
+#                 'attitude' = datasets::attitude,
+#                'titanic' = datasets::Titanic)
+# mtcars <- datasets::mtcars
+# class_generator <- R6Class()
+# object <- class_generator$new()
+# gather_objects(type = "all")
 }

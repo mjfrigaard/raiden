@@ -51,8 +51,8 @@ gather_dfs <- function() {
 #'
 #' @examples
 #' # my_list <- list('mtcars' = datasets::mtcars,
-#'                 'attitude' = datasets::attitude,
-#'                 'titanic' = datasets::Titanic)
+#' #                 'attitude' = datasets::attitude,
+#' #                 'titanic' = datasets::Titanic)
 #' # gather_lists()
 gather_lists <- function() {
   all_objects <- names(rlang::global_env())
@@ -102,13 +102,13 @@ gather_r6s <- function() {
 #'
 #' @examples
 #' require(R6)
-#' my_list <- list('mtcars' = datasets::mtcars,
-#'                 'attitude' = datasets::attitude,
-#'                 'titanic' = datasets::Titanic)
-#' mtcars <- datasets::mtcars
-#' class_generator <- R6Class()
-#' object <- class_generator$new()
-#' gather_objects(type = "all")
+#' # my_list <- list('mtcars' = datasets::mtcars,
+#' #                 'attitude' = datasets::attitude,
+#' #                'titanic' = datasets::Titanic)
+#' # mtcars <- datasets::mtcars
+#' # class_generator <- R6Class()
+#' # object <- class_generator$new()
+#' # gather_objects(type = "all")
 gather_objects <- function(type = "all") {
   x <- switch(EXPR = type,
     all = gather_all(),

@@ -14,7 +14,7 @@ Gather lists in global environment
 }
 \examples{
 # my_list <- list('mtcars' = datasets::mtcars,
-                'attitude' = datasets::attitude,
-                'titanic' = datasets::Titanic)
+#                 'attitude' = datasets::attitude,
+#                 'titanic' = datasets::Titanic)
 # gather_lists()
 }
