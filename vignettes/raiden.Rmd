@@ -1,0 +1,24 @@
+---
+title: "raiden"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{raiden}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r pkgs, message=FALSE, warning=FALSE}
+library(raiden)
+library(shiny)
+library(miniUI)
+library(htmlwidgets)
+library(htmltools)
+```
+
