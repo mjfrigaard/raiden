@@ -17,5 +17,5 @@
                 -   `pkgdown::build_site_github_pages()`
                 -   commit/push
                 -   Success! See [run](https://github.com/mjfrigaard/raiden/actions/runs/5607123136)
-            
-![](man/figures/pkdown_lintr_gha_success.png){fig-align='center'}
+
+![](man/figures/pkdown_lintr_gha_success.png){fig-align="center"}
