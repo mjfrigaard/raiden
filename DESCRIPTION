@@ -20,6 +20,7 @@ Imports:
   miniUI (>= 0.1.1),
   rstudioapi (>= 0.5),
   htmlwidgets,
-  rlang
+  rlang,
+  purrr
 Config/testthat/edition: 3
 URL: https://mjfrigaard.github.io/raiden/
