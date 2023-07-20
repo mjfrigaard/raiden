@@ -4,7 +4,7 @@ pkgdown_sha: ~
 articles:
   how-it-works: how-it-works.html
   raiden: raiden.html
-last_built: 2023-07-20T05:08Z
+last_built: 2023-07-20T05:53Z
 urls:
   reference: https://mjfrigaard.github.io/raiden/reference
   article: https://mjfrigaard.github.io/raiden/articles
