@@ -17,6 +17,8 @@ knitr::opts_knit$set(
 )
 ```
 
+![](https://img.shields.io/badge/status-under_development-red)
+
 ```{r pkgs}
 library(raiden)
 library(rstudioapi)
