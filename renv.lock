@@ -892,15 +892,15 @@
     },
     "purrr": {
       "Package": "purrr",
-      "Version": "1.0.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "RemoteType": "standard",
-      "RemotePkgRef": "purrr",
-      "RemoteRef": "purrr",
-      "RemoteRepos": "https://cran.rstudio.com",
-      "RemotePkgPlatform": "x86_64-apple-darwin17.0",
-      "RemoteSha": "1.0.1",
+      "Version": "1.0.1.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "purrr",
+      "RemoteUsername": "tidyverse",
+      "RemotePkgRef": "tidyverse/purrr",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "fd5a7320e37f7301c2dcc1668d032ee0d35acc9c",
       "Requirements": [
         "R",
         "cli",
@@ -909,7 +909,7 @@
         "rlang",
         "vctrs"
       ],
-      "Hash": "d71c815267c640f17ddbf7f16144b4bb"
+      "Hash": "872a4aed24747a9743c2cac5eea62b7c"
     },
     "ragg": {
       "Package": "ragg",
